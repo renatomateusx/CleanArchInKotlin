@@ -1,0 +1,6 @@
+
+dependencies {
+    implementation project(":output-boundary")
+    implementation project(":input-boundary")
+    implementation project(":entities")
+}

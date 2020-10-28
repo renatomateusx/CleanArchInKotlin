@@ -1,2 +1,10 @@
 rootProject.name = "CleanArchKotlin"
-include("application")
+include ("application")
+include("configuration")
+include("entities")
+include("input-boundary")
+include("output-boundary")
+include("repository")
+include("service")
+include("usecase")
+include("web")
