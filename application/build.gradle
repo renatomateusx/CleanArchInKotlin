@@ -1,13 +1,13 @@
 apply plugin: 'application'
 mainClassName = "com.renatomateusx.clean.arch.main.Boot"
 dependencies {
-    /*implementation project(":configuration")
+    implementation project(":configuration")
     implementation project(":input-boundary")
     implementation project(":output-boundary")
     implementation project(":repository")
     implementation project(":entities")
     implementation project(":service")
     implementation project(":usecase")
-    implementation project(":web")*/
+    implementation project(":web")
 
 }

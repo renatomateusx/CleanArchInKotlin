@@ -8,11 +8,11 @@ plugins {
 	kotlin("jvm") version "1.3.72"
 	kotlin("plugin.spring") version "1.3.72"
 	kotlin("plugin.jpa") version "1.3.72"
+	id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
 }
 
 group = "com.renatomateusx.clean.arch"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
@@ -36,11 +36,9 @@ subprojects() {
 
 
 	dependencies {
-		implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-		implementation("org.springframework.boot:spring-boot-starter-data-rest")
-		implementation("org.springframework.boot:spring-boot-starter-web")
-		implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-		implementation("org.apache.kafka:kafka-streams")
+		implementation("org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE")
+		implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.0")
+		implementation("org.apache.kafka:kafka-streams:2.6.0")
 		implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72")
 		implementation("org.jetbrains.kotlin:kotlin-allopen:1.3.72")
 		implementation("org.jetbrains.kotlin:kotlin-reflect")
